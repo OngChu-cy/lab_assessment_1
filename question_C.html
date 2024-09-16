@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Creating Forms</title>
+</head>
+    <body>
+        <form action="/action_page.py" ></form>
+        <label for="Fname">First Name:</label>
+        <input type="text" id="Fname" name="First name"><br><br>
+        <label for="Lname">Last Name:</label>
+        <input type="text" id="Lname" name="Last Name"><br><br>
+        <fieldset>
+            <legend>Details</legend>
+            <h4>Choose your Role:</h4>
+            <form action="/action_page.py" method="get">
+                <input type="radio" id="teacher" name="Teacher" value="teacher">
+                <label for="teacher">Teacher</label><br>
+                <input type="radio" id="student" name="Student" value="student">
+                <label for="student">Student</label><br>
+            </form><br>
+
+            <form action="/action_page.py">
+                <label for="Dept">Choose your Department: </label>
+                <select name="Department" id="dept">
+                    <option value="DIT">IT</option>
+                    <option value="Civil">Civil</option>
+                    <option value="Electrical_Mechanical">Electrical and Mechanical</option>
+
+    
+                </select> 
+            </form>
+
+            <form action="/action_page.py">
+                <h4>Choose your club(s):</h4>
+                <input type="checkbox" id="cultural_club" name="Cultural club" value="Cultural club">
+                <label for="cultural_club">Cultural club</label><br>
+
+                <input type="checkbox" id="media_club" name="Media club" value="Media club">
+                <label for="media_club">Media club</label><br>
+                
+                <input type="checkbox" id="helping_hand_club" name="Helping Hand Club" value="Helping Hand club">
+                <label for="helping_hand_club">Helping Hand club</label><br>
+            </form><br><br>
+
+            <input type="submit" value="Submit">
+            
+        </fieldset>   
+    
+    </body>
+</html>
